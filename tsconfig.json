@@ -9,6 +9,7 @@
     "esModuleInterop": true,
     "outDir": "build/",
     "jsx": "react-native",
+    "skipLibCheck": true
   },
   "include": [
     "src/*"
