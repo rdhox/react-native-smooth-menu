@@ -148,15 +148,15 @@ const SmoothMenu: React.FC<Props> = (props) => {
                     position: "absolute",
                     right: 15,
                     transform: [
-                      { rotateZ: 1.55 },
+                      { rotateZ: "90deg" },
                       {
                         rotateY:
                           indexSelected === i
                             ? animSlot.interpolate({
                                 inputRange: [0, 1],
-                                outputRange: [0, 3],
+                                outputRange: ["0deg", "180deg"],
                               })
-                            : 0,
+                            : "0deg",
                       },
                       { perspective: 1000 },
                     ],
